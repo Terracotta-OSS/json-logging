@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.terracotta</groupId>
         <artifactId>terracotta-parent</artifactId>
-        <version>5.21</version>
+        <version>5.23</version>
     </parent>
 
     <groupId>org.terracotta</groupId>
@@ -132,7 +132,6 @@
                 <plugin>
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>4.5</version>
                     <configuration>
                         <inlineHeader><![CDATA[
 Copyright Super iPaaS Integration LLC, an IBM Company 2024
@@ -149,14 +148,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
                 ]]></inlineHeader>
-                    <excludes>
-                        <exclude>mvnw*</exclude>
-                        <exclude>./mvn/**</exclude>
-                        <exclude>**/src/test/resources/**</exclude>
-                        <exclude>**/.idea/**</exclude>
-                        <exclude>**/nbproject/**</exclude>
-                        <exclude>.m2/**</exclude>
-                    </excludes>
                     </configuration>
                 </plugin>
             </plugins>
