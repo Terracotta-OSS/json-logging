@@ -62,7 +62,7 @@ public class TerracottaJsonLayout extends JsonLayout {
 
   @Override
   protected void addCustomDataToJsonMap(Map<String, Object> map, ILoggingEvent logEvent) {
-    if (!logEvent.getMarkerList().isEmpty()) {
+    if (logEvent.getMarkerList() != null && !logEvent.getMarkerList().isEmpty()) {
       // only log top marker, no child
       map.put(Key.MARKER, logEvent.getMarkerList().get(0).getName());
     }
